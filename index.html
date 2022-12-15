@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Crappy Google</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="assets/icons/favicon.png" rel="icon" type="images/png">
+  <link href="manifest.json" rel="manifest" type="text/json" />
+  <!-- embed data --->
+  <meta content="Crappy Google" property="og:title">
+  <meta content="A crappy version of google that looks like it drawn by a todler." property="og:description">
+  <meta content="https://crappy-google.bijenmanlol.repl.co/" property="og:url">
+  <meta content="https://crappy-google.bijenmanlol.repl.co/assets/icons/favicon.png" property="og:image">
+  <meta property="og:image:secure_url" content="https://crappy-google.bijenmanlol.repl.co/assets/icons/favicon.png"> 
+  <meta content="#ffffff" data-react-helmet="true" name="theme-color" />
+  <!-- --->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img id="account" onclick="account()">
+      <button id="signin" onclick="LoginWithReplit()">Sing In</button>
+      <img id="menu" src="assets/functions/menu.png">
+      <a href="https://images.google.com/">Imagges</a>
+      <a href="https://mail.google.com/">Gmajl</a>
+    </nav>
+  </header>
+  <main>
+    <img id="icon" src="assets/icons/icon.png">
+    <div id="input-sec">
+      <div id="bar">
+          <img onclick="search(false)" id="img" src="assets/functions/search.png">
+          <input onfocus="search(true)" onblur="if(document.querySelector('#input-sec:hover') == null){search(false)}else{return}" id="input-bar" type="text" placeholder="Surch on gOogle" spellcheck="false" autocomplete="off">
+      </div>
+      <div class="recent">
+        <a href="https://www.google.be/search?q=veri biG boobz">
+          <img id="img" src="assets/functions/recent.png">
+          <p class="sub">veri biG boobz</p>
+        </a>
+      </div>
+      <div class="recent">
+        <a href="https://www.google.be/search?q=Cat">
+          <img id="img" src="assets/functions/recent.png">
+          <p class="sub">Cat</p>
+        </a>
+      </div>
+      <div class="recent">
+        <a href="https://www.google.be/search?q=big dogs">
+          <img id="img" src="assets/functions/recent.png"> 
+          <p class="sub">big dogs</p>
+        </a>
+      </div>
+      <div class="recent">
+        <a href="https://www.google.be/search?q=jiggly boOdy chyks">
+          <img id="img" src="assets/functions/recent.png">
+          <p class="sub">jiggly boOdy chyks</p>
+        </a>
+      </div>
+      <div id="buttons2">
+        <button onclick="up()" class="under-buttons">Guogle searg</button>
+        <a href="https://google.com/doodles">
+          <button class="under-buttons">Am feelng luky</button>
+        </a>
+      </div>
+    </div>
+      <div id="buttons">
+        <button onclick="up()" class="under-buttons">Guogle searg</button>
+        <a href="https://google.com/doodles">
+          <button class="under-buttons">Am feelng luky</button>
+        </a>
+      </div>
+  </main>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/repl-auth-v2.js"></script>
+  <script type="module">const user = await getUserInfo(); if(user != null){document.getElementById("signin").style.display = "none"; document.getElementById("account").src = user.profileImage; document.getElementById("account").style.display = "block";}</script>
+  </script>
+</body>
+
+</html>
