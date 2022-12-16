@@ -121,7 +121,7 @@
   </main>
   <script src="script.js"></script>
   <script src="https://replit.com/public/js/repl-auth-v2.js"></script>
-  <script type="module">const user = await getUserInfo(); if(user != null){document.getElementById("signin").style.display = "none"; document.getElementById("account").src = user.profileImage; document.getElementById("account-link").style.display = "block";}</script>
+  <script type="module">const user = await getUserInfo(); if(user != null){document.getElementById("signin").style.display = "none"; document.getElementById("account").src = user.profileImage; document.getElementById("account-link").href = user.url; document.getElementById("account-link").style.display = "block";}</script>
   </script>
 </body>
 

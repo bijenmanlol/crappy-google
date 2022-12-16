@@ -150,6 +150,7 @@ main{
 
 .under-buttons:hover{
   background-color: #e6e6e6;
+  cursor: pointer;
 }
 
 header nav{
@@ -199,6 +200,7 @@ header nav a:hover{
 
 #menu:hover{
   box-shadow: inset 0 0 50px #c7c7c7;
+  cursor: pointer;
 }
 
 .project a img{
