@@ -21,12 +21,58 @@
 <body>
   <header>
     <nav>
-      <img id="account">
+      <a id="account-link">
+        <img id="account">
+      </a>
       <button id="signin" onclick="LoginWithReplit()">Sing In</button>
-      <img id="menu" src="assets/functions/menu.png">
+      <img onclick="menu()" id="menu" src="assets/functions/menu.png">
       <a href="https://images.google.com/">Imagges</a>
       <a href="https://mail.google.com/">Gmajl</a>
     </nav>
+    <div id="menur">
+      <div id=other>
+        <h5>Projects</h5>
+        <div id="other-sec">
+          <div class="project">
+            <a href="https://drooler.tk/">
+              <img src="https://drooler.tk/assets/icons2/icon2.png">
+              <p>Socials</p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://chubbyrat.repl.co/">
+              <img src="https://chubbyrat.repl.co/anime.jpg">
+              <p>Chubby Rat</p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://zoetecola.tk/">
+              <img src="https://zoetecola.tk/assets/icons/iconSF.png">
+              <p>Zoete Cola</p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://racoon.drooler.tk/">
+              <img src="https://racoon.drooler.tk/assets/icon.png">
+              <p>Racoon Bot</p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://dbsdw.drooler.tk/">
+              <img src="https://dbsdw.drooler.tk/assets/icon.png">
+              <p>DBSDW</p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://crappy-google.bijenmanlol.repl.co/">
+              <img src="assets/icons/favicon.png">
+              <p>Crappy Google</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p id="repl">All hosted on Replit <img src="assets/functions/heart.png"></p>
+    </div>
   </header>
   <main>
     <img id="icon" src="assets/icons/icon.png">
@@ -75,7 +121,7 @@
   </main>
   <script src="script.js"></script>
   <script src="https://replit.com/public/js/repl-auth-v2.js"></script>
-  <script type="module">const user = await getUserInfo(); if(user != null){document.getElementById("signin").style.display = "none"; document.getElementById("account").src = user.profileImage; document.getElementById("account").style.display = "block";}</script>
+  <script type="module">const user = await getUserInfo(); if(user != null){document.getElementById("signin").style.display = "none"; document.getElementById("account").src = user.profileImage; document.getElementById("account-link").style.display = "block";}</script>
   </script>
 </body>
 

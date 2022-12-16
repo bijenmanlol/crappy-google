@@ -34,3 +34,15 @@ function up() {
     window.location.href = "https://www.google.be/search?q=" + document.getElementById("input-bar").value;
   }
 }
+
+open = 0;
+
+function menu() {
+    if(open == 0){
+        document.getElementById("menur").style.display = "flex";
+        open++;
+    }else{
+        open = 0;
+        document.getElementById("menur").style.display = "none";
+    }
+}
