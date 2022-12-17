@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -21,7 +21,7 @@
 <body>
   <header>
     <nav>
-      <a id="account-link">
+      <a target="_blank" id="account-link">
         <img id="account">
       </a>
       <button id="signin" onclick="LoginWithReplit()">Sing In</button>
@@ -122,7 +122,6 @@
   <script src="script.js"></script>
   <script src="https://replit.com/public/js/repl-auth-v2.js"></script>
   <script type="module">const user = await getUserInfo(); if(user != null){document.getElementById("signin").style.display = "none"; document.getElementById("account").src = user.profileImage; document.getElementById("account-link").href = user.url; document.getElementById("account-link").style.display = "block";}</script>
-  </script>
 </body>
 
 </html>

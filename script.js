@@ -35,14 +35,14 @@ function up() {
   }
 }
 
-open = 0;
+opened = 0;
 
 function menu() {
-    if(open == 0){
+    if(opened == 0){
         document.getElementById("menur").style.display = "flex";
-        open++;
+        opened++;
     }else{
-        open = 0;
+        opened = 0;
         document.getElementById("menur").style.display = "none";
     }
 }
