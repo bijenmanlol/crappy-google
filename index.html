@@ -13,7 +13,7 @@
   <meta content="A crappy version of google that looks like it drawn by a todler." property="og:description">
   <meta content="https://crappy-google.bijenmanlol.repl.co/" property="og:url">
   <meta content="https://crappy-google.bijenmanlol.repl.co/assets/icons/favicon.png" property="og:image">
-  <meta property="og:image:secure_url" content="https://crappy-google.bijenmanlol.repl.co/assets/icons/favicon.png"> 
+  <meta property="og:image:secure_url" content="https://crappy-google.bijenmanlol.repl.co/assets/icons/favicon.png">
   <meta content="#ffffff" data-react-helmet="true" name="theme-color" />
   <!-- --->
 </head>
@@ -78,8 +78,10 @@
     <img id="icon" src="assets/icons/icon.png">
     <div id="input-sec">
       <div id="bar">
-          <img onclick="search(false)" id="img" src="assets/functions/search.png">
-          <input onfocus="search(true)" onblur="if(document.querySelector('#input-sec:hover') == null){search(false)}else{return}" id="input-bar" type="text" placeholder="Surch on gOogle" spellcheck="false" autocomplete="off">
+        <img onclick="search(false)" id="img" src="assets/functions/search.png">
+        <input onfocus="search(true)"
+          onblur="if(document.querySelector('#input-sec:hover') == null){search(false)}else{return}" id="input-bar"
+          type="text" placeholder="Surch on gOogle" spellcheck="false" autocomplete="off">
       </div>
       <div class="recent">
         <a href="https://www.google.be/search?q=veri biG boobz">
@@ -95,7 +97,7 @@
       </div>
       <div class="recent">
         <a href="https://www.google.be/search?q=big dogs">
-          <img id="img" src="assets/functions/recent.png"> 
+          <img id="img" src="assets/functions/recent.png">
           <p class="sub">big dogs</p>
         </a>
       </div>
@@ -112,16 +114,17 @@
         </a>
       </div>
     </div>
-      <div id="buttons">
-        <button onclick="up()" class="under-buttons">Guogle searg</button>
-        <a href="https://google.com/doodles">
-          <button class="under-buttons">Am feelng luky</button>
-        </a>
-      </div>
+    <div id="buttons">
+      <button onclick="up()" class="under-buttons">Guogle searg</button>
+      <a href="https://google.com/doodles">
+        <button class="under-buttons">Am feelng luky</button>
+      </a>
+    </div>
   </main>
   <script src="script.js"></script>
   <script src="https://replit.com/public/js/repl-auth-v2.js"></script>
-  <script type="module">const user = await getUserInfo(); if(user != null){document.getElementById("signin").style.display = "none"; document.getElementById("account").src = user.profileImage; document.getElementById("account-link").href = user.url; document.getElementById("account-link").style.display = "block";}</script>
+  <script
+    type="module">const user = await getUserInfo(); if (user != null) {document.getElementById("signin").style.display = "none"; document.getElementById("account").src = user.profileImage; document.getElementById("account-link").href = user.url; document.getElementById("account-link").style.display = "block";}</script>
 </body>
 
 </html>
