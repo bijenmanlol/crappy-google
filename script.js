@@ -1,19 +1,19 @@
 function search(arg) {
   elements = document.getElementsByClassName("recent")
-  if(arg){
+  if (arg) {
     document.getElementById("input-sec").style.height = "300px";
     document.getElementById("input-sec").style.borderRadius = "15px";
-    document.getElementById("bar").style.borderBottomStyle  = "solid";
-    for(i = 0; elements.length > i; i++){
+    document.getElementById("bar").style.borderBottomStyle = "solid";
+    for (i = 0; elements.length > i; i++) {
       elements[i].style.display = "block";
     }
     document.getElementById("buttons2").style.display = "block";
     document.getElementById("buttons").style.display = "none";
-  }else{
+  } else {
     document.getElementById("input-sec").style.height = "50px";
     document.getElementById("input-sec").style.borderRadius = "25px";
-    document.getElementById("bar").style.borderBottomStyle  = "none";
-    for(i = 0; elements.length > i; i++){
+    document.getElementById("bar").style.borderBottomStyle = "none";
+    for (i = 0; elements.length > i; i++) {
       elements[i].style.display = "none";
     }
     document.getElementById("buttons2").style.display = "none";
@@ -22,15 +22,15 @@ function search(arg) {
 }
 
 document.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
-      up();
-    }
+  if (event.keyCode === 13) {
+    up();
+  }
 });
 
 function up() {
-  if(document.getElementById("input-bar").value == ""){
+  if (document.getElementById("input-bar").value == "") {
     return
-  }else{
+  } else {
     window.location.href = "https://www.google.be/search?q=" + document.getElementById("input-bar").value;
   }
 }
@@ -38,11 +38,11 @@ function up() {
 opened = 0;
 
 function menu() {
-    if(opened == 0){
-        document.getElementById("menur").style.display = "flex";
-        opened++;
-    }else{
-        opened = 0;
-        document.getElementById("menur").style.display = "none";
-    }
+  if (opened == 0) {
+    document.getElementById("menur").style.display = "flex";
+    opened++;
+  } else {
+    opened = 0;
+    document.getElementById("menur").style.display = "none";
+  }
 }
